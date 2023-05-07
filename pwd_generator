@@ -1,15 +1,15 @@
 import random
 
-#A function do shuffle all the characters of a string
+
 def shuffle(string):
   tempList = list(string)
   random.shuffle(tempList)
   return ''.join(tempList)
 
 #Main program starts here
-uppercaseLetter1=chr(random.randint(65,90)) #Generate a random Uppercase letter (based on ASCII code)
-uppercaseLetter2=chr(random.randint(65,90)) #Generate a random Uppercase letter (based on ASCII code)
-#Generate more characters here
+uppercaseLetter1=chr(random.randint(65,90)) #Generate a random Uppercase letter 
+uppercaseLetter2=chr(random.randint(65,90)) #Generate a random Uppercase letter 
+
 lowercase1=chr(random.randint(97,122)) #Generate a random lowercase letter
 lowercase2=chr(random.randint(97,122)) #Generate a random lowercase letter
 digit1=chr(random.randint(48,57)) #Generate a random number
