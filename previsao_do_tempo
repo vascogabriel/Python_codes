@@ -1,0 +1,49 @@
+import random
+
+def randomYesNo():
+  return random.choice(["Sim","Nao"])
+  
+sunny = randomYesNo()
+print("Ensolarado: " + sunny)
+
+if sunny == "Sim":
+  print("Leve seus óculos escuros!")
+else:
+  print("Pode deixar seus óculos escuros em casa.")
+
+windy = randomYesNo()
+print("Ventania: " + windy)
+if windy == "Sim":
+  print("Atenção com o vento hoje.")
+else:
+  print("Pouco vento hoje.")
+if (sunny=="Sim") and (windy == "Sim"):
+  print("Ótimo dia para ir velejar!")
+if (sunny=="Sim") and (windy=="Nao"):
+  print("Dia perfeito para ir a praia!")
+
+rainy = randomYesNo()
+print("Chuvoso: " + rainy)
+
+if rainy == "Sim":
+  print("Leve o guarda-chuva!")
+else:
+  print("Nada de guarda-chuva hoje.")
+  
+if (sunny == "Sim") and (rainy == "Sim"):
+  print("Grande chance de ver um arco-iris!")
+
+icy = randomYesNo()
+print("Geada: " + icy)
+
+if icy=="Sim":
+  print("Cuidado com o gelo na estrada.")
+else:
+  print("Nada de gelo hoje.")
+
+snowy = randomYesNo()
+print("Neve: " + snowy)
+if (icy=="Sim") or (snowy == "Sim"):
+  print("Ponha as luvas, vai fazer muito frio hoje.")
+else:
+  print("Um casaco hoje é o suficiente.")
